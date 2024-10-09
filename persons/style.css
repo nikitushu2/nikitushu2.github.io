@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d5d5d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divs1,
+#divs2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#divs1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div {
+    border: none;
+    box-shadow: 3px 1px 3px gray;
+    padding: 0 0 20px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.div p:nth-child(odd) {
+    background-color: #bbbbbb;
+}
+
+.div p:nth-child(even) {
+    background-color: #d5d5d5;
+}
+
+@media only screen and (max-width: 600px) {
+    #divs1,
+    #divs2 {
+        flex-direction: column;
+    }
+  }
