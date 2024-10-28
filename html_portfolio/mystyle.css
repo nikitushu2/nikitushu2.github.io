@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.top {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+.notbold{
+    font-weight: normal;
+}​
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover {
+    color: grey;
+}
+
+nav {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin: 200px 0;
+}
+
+header {
+    background-image: url('lake.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-top: 100px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+section h3 {
+    margin: 100px 0 0 40px;
+}
+
+.projects {
+    display: flex;
+    margin: 0 0 100px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 63px;
+    
+} 
+
+#project1,
+#project2,
+#project3 {
+    border: none;
+    box-shadow: 1px 1px 3px gray;
+    padding: 0 0 20px 0;
+}
+
+#project1 img, 
+#project2 img,
+#project3 img {
+    max-width: 1400px;
+    max-height: 244px;
+}
+
+#project1 h4,
+#project1 p,
+#project1 a {
+    padding: 0 0 15px 40px;
+}
+
+#project2 h4,
+#project2 p,
+#project2 a {
+    padding: 0 0 15px 40px;
+}
+
+#project3 h4,
+#project3 p,
+#project3 a {
+    padding: 0 0 15px 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff7f50;
+}
+
+a:hover {
+    color: #ffb498;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.projectstitle {
+    margin: 0 0 20px 0;
+}
+
+.projectscontent {
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.about {
+    display: flex;
+    margin: 0 0 100px 0;
+    background-color: rgb(255, 236, 197);
+} 
+
+.abouttitle {
+    background-color: rgb(255, 236, 197);
+    margin-bottom: 0;
+    padding: 10px 0 20px 0;
+}
+
+.aboutcontent {
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 100px;
+}
+
+.projects img {
+    max-width: 800px;
+    max-height: 150px;
+    margin: 20px 20px 20px 40px;
+}
+
+.about img {
+    max-width: 800px;
+    max-height: 150px;
+    margin: 0 40px 20px 20px;
+}
+
+.skills img {
+    max-width: 800px;
+    max-height: 150px;
+    margin: 20px 20px 20px 40px;
+}
+
+.skills {
+    display: flex;
+    margin: 0 0 100px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+#skill1:first-child {
+    background-color: rgb(238, 238, 238);
+}
+
+#skill3 {
+    background-color: rgb(238, 238, 238);
+}
+
+.skillscontent {
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: rgb(217, 217, 217);
+    padding: 20px 0;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+    color: rgb(217, 217, 217);
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+#message {
+    height: 100px;
+
+}
+
+button {
+    color: white;
+    border-radius: 5px;
+    background: coral;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.container { 
+    background-color: rgb(192, 192, 192); 
+    width: 80%; 
+    border-radius: 5px;
+    height: 2rem;
+} 
+
+.skill { 
+    background-color: coral; 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+    border-radius: 5px; 
+    height: 2rem;
+} 
+
+.html,
+.css { 
+    width: 50%; 
+}
+
+.javascript {
+    width: 80%;
+}
+
+.react {
+    width: 1%;
+}
+
+#skill1,
+#skill2,
+#skill3,
+#skill4 {
+    border: none;
+    box-shadow: 1px 1px 3px gray;
+    padding: 20px;
+    text-align: center;
+}
+
+#skill1 img,
+#skill2 img,
+#skill3 img,
+#skill4 img {
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.skillstitle {
+    margin: 0 0 20px 0;
+}
+
+
+#backTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    background-color: coral;
+    font-size: 10px;
+    width: 10vw;
+}
+
+.mobile {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    background-color: rgb(100, 50, 129);
+    font-size: 10px;
+    width: 10vw;
+    
+}
+
+#title1, #title3 {
+    scroll-margin-top: 100px;
+}
+
+#gallery {
+    display: grid;
+    padding: 50px;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "img1 img1 img5 img5 img9 img9"
+    "img1 img1 img5 img5 img9 img9"
+    "img1 img1 img6 img6 img9 img9"
+    "img1 img1 img6 img6 img9 img9"
+    "img2 img7 img7 img7 img9 img9"
+    "img3 img7 img7 img7 img8 img8"
+    "img4 img7 img7 img7 img8 img8"
+    ;
+    grid-gap: 0.2rem;
+    text-align: center;
+}
+
+#img1 {
+    background-image: url('finland.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img1;
+}
+
+#img2 {
+    background-image: url('finland2.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img2;
+}
+
+#img3 {
+    background-image: url('finland3.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img3;
+}
+
+#img4 {
+    background-image: url('finland4.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img4;
+}
+
+#img5 {
+    background-image: url('finland4.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img5;
+}
+
+#img6 {
+    background-image: url('finland2.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img6;
+}
+
+#img7 {
+    background-image: url('finland3.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img7;
+}
+
+#img8 {
+    background-image: url('finland4.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img8;
+}
+
+#img9 {
+    background-image: url('finland3.jpeg');
+    background-size: cover;
+    background-position: center;
+    grid-area: img9;
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects,
+    .skills {
+        flex-direction: column;
+    }
+
+    .mobile {
+        display: block;
+        padding-inline: 0;
+    }
+
+    #backTop {
+        padding-inline: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.responsive {
+        display: block;
+        background-color: rgb(255, 224, 176);
+        color: #333;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 37px;
+    }
+
+    ul.responsive li {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .projects,
+    .skills {
+        flex-direction: column;
+    }
+
+    li {
+        display: block;
+    }
+
+    .about,
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutcontent,
+    .skillscontent {
+        padding: 50px;
+        margin: 0;
+    }
+
+    .mobile {
+        display: block;
+        padding-inline: 0;
+    }
+
+    #backTop {
+        padding-inline: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.responsive {
+        display: block;
+        background-color: rgb(255, 224, 176);
+        color: #333;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 37px;
+    }
+
+    ul.responsive li {
+        display: block;
+        margin: 2rem;
+    }
+
+}
