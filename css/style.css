@@ -73,6 +73,31 @@ html, body {
   padding: 0 var(--page-pad);
 }
 
+/* --- stack --- */
+#stack {
+  position: relative;
+}
+
+#stack-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#stack .page__content {
+  position: relative;
+  z-index: 2;
+}
+
+#stack::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 950px 620px at center, var(--bg) 55%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* --- intro --- */
 #intro {
   position: relative;
@@ -155,6 +180,11 @@ html, body {
 .education__degree {
   font-size: 1.1rem;
   font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.education__degree:first-child {
+  margin-top: 0;
 }
 
 .education__school {
