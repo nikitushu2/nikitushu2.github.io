@@ -34,6 +34,37 @@
   });
 
   await tsParticles.load({
+    id: "contact-particles",
+    options: {
+      fullScreen: { enable: false },
+      background: { color: { value: "transparent" } },
+      particles: {
+        paint: {
+          fill: {
+            color: { value: "#ff6161" },
+            enable: true,
+          },
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outModes: { default: "out" },
+          random: true,
+          speed: 0.3,
+          straight: false,
+        },
+        number: { density: { enable: true }, value: 160 },
+        opacity: {
+          animation: { enable: true, speed: 3, sync: false },
+          value: { min: 0, max: 1 },
+        },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 3 } },
+      },
+    },
+  });
+
+  await tsParticles.load({
     id: "projects-particles",
     options: {
       fullScreen: { enable: false },
