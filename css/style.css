@@ -98,6 +98,31 @@ html, body {
   pointer-events: none;
 }
 
+/* --- projects --- */
+#projects {
+  position: relative;
+}
+
+#projects-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#projects .page__content {
+  position: relative;
+  z-index: 2;
+}
+
+#projects::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 850px 400px at center, var(--bg) 55%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* --- intro --- */
 #intro {
   position: relative;
