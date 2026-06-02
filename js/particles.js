@@ -22,7 +22,7 @@
           speed: 0.3,
           straight: false,
         },
-        number: { density: { enable: true }, value: 160 },
+        number: { density: { enable: true }, value: 360 },
         opacity: {
           animation: { enable: true, speed: 3, sync: false },
           value: { min: 0, max: 1 },
@@ -53,7 +53,7 @@
           speed: 0.3,
           straight: false,
         },
-        number: { density: { enable: true }, value: 160 },
+        number: { density: { enable: true }, value: 360 },
         opacity: {
           animation: { enable: true, speed: 3, sync: false },
           value: { min: 0, max: 1 },
@@ -70,7 +70,7 @@
       fullScreen: { enable: false },
       background: { color: { value: "transparent" } },
       particles: {
-        number: { value: 80 },
+        number: { value: 200 },
         paint: {
           fill: {
             color: { value: "#ff6161" },
@@ -81,11 +81,11 @@
           enable: true,
           distance: 150,
           color: { value: "#ff6161" },
-          opacity: 0.8,
+          opacity: 1,
         },
         move: {
           enable: true,
-          speed: 0.8,
+          speed: 1.5,
         },
         size: { value: { min: 1, max: 2 } },
         shape: { type: "circle" },
