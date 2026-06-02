@@ -74,6 +74,30 @@ html, body {
 }
 
 /* --- intro --- */
+#intro {
+  position: relative;
+}
+
+#intro-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#intro .page__content {
+  position: relative;
+  z-index: 2;
+}
+
+#intro::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 700px 380px at center, var(--bg) 55%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 #intro .page__content {
   display: flex;
   align-items: center;
