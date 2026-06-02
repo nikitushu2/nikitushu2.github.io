@@ -81,14 +81,12 @@ html, body {
 }
 
 .intro__photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 260px;
+  height: 320px;
   object-fit: cover;
-  border: 2px solid var(--accent);
-  box-shadow: 0 0 40px var(--accent-glow);
   flex-shrink: 0;
-  background: var(--bg-card);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
 }
 
 .intro__name {
