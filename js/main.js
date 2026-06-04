@@ -4,6 +4,7 @@ let current = 0;
 let locked = false;
 
 window.addEventListener('wheel', (e) => {
+  if (window.matchMedia('(max-width: 768px)').matches) return;
   e.preventDefault();
   if (locked) return;
 

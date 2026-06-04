@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* tokens */
 :root {
   --bg:        #07070f;
@@ -267,6 +272,66 @@ html, body {
 .btn:hover {
   background: var(--accent);
   color: #fff;
+}
+
+/* --- mobile --- */
+@media (max-width: 768px) {
+  .scroll-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    height: auto;
+    width: 3px;
+  }
+
+  .page {
+    min-width: 100%;
+    min-height: 100svh;
+    height: auto;
+  }
+
+  #intro .page__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .intro__photo {
+    width: 160px;
+    height: 200px;
+  }
+
+  .project {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project__image {
+    width: 100%;
+    height: 180px;
+    flex-shrink: unset;
+  }
+
+  #intro::after {
+    background: radial-gradient(ellipse 100vw 400px at center, var(--bg) 55%, transparent 100%);
+  }
+
+  #stack::after {
+    background: radial-gradient(ellipse 100vw 500px at center, var(--bg) 55%, transparent 100%);
+  }
+
+  #projects::after {
+    background: radial-gradient(ellipse 100vw 400px at center, var(--bg) 55%, transparent 100%);
+  }
+
+  #contact::after {
+    background: radial-gradient(ellipse 100vw 400px at center, var(--bg) 55%, transparent 100%);
+  }
 }
 
 /* --- contact --- */
